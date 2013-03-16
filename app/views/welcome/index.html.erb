@@ -1,0 +1,38 @@
+<div id="welcome-page" class="silver-one">
+  
+  <div id="entering" class="heading">
+    <center>BEFORE ENTERING<br><br></center>
+  </div>
+  
+  <div id="welcome-logo" class="slide-up">
+    <center>
+      <%= image_tag('logo.png', :alt => 'LOGO', :size => '400x300') %><br><br>
+    </center>
+  </div>
+
+
+  <div id="warning" class="center">
+    This site contains information about Tobacco related products and services. If you are under the age of 18 or offended by Tobacco or Tobacco related products and services please exit now.<br><br>
+
+  By entering this site you agree that you are at least 18 years of age and that Tobacco related products and services are legal in your area.<br><br>
+  
+  <div class="enter-exit pull-left">
+    <center>
+      <a href="store">ENTER</a>
+    </center>
+  </div>
+  
+  <div class="enter-exit pull-left">
+    <center>
+      <%= link_to 'EXIT', "http://google.com" %>
+    </center>
+  </div>
+  
+  <br>
+  
+
+  
+  </div>
+
+</div>
+<%= render "shared/footer" %>

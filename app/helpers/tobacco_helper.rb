@@ -1,0 +1,2 @@
+module TobaccoHelper
+end

@@ -1,0 +1,48 @@
+<div id="page-container" class="pull-left">
+
+  <div id="left-side" class="indent">
+      
+      <div class="heading">
+        COME IN AND SHOP<br><br>
+      </div>
+
+      <div class="slide-up">
+        We carry a large assortment of rare collectables and antiques as well as small consignment items. We have a large turnover rate with our merchandise. Shop often to snatch up these bargains. They may quickly become unavailable. <br><br>
+
+        Our inventory includes but is not limited to:<br>
+        
+        
+      <% for entry in Merchandise.all(:order => "ID") %>
+        <%= entry.merchandise_info %><br>
+      <% end %>
+      </div>
+      
+  </div>
+
+  <div id="right-side" class="indent">
+    <%= image_tag('dcase2.JPG', :alt => 'LOGO', :size => "600x400",) %>
+  </div>
+
+</div>
+
+<div id="page-container" class="pull-left">
+
+  <div id="left-side" class="indent">
+      
+      <div class="heading">
+        NOT A SMOKE SHOP<br><br>
+      </div>
+
+      <div class="slide-up">
+        Please note our store is a Tobacco Emporium not a Smoke Shop. The difference is our inventory does not include Pipes, Water Pipes, Hookahs, pre packaged cigarettes, or any drug related paraphernalia. So shop with a clear conscience because our goods and services offer a drug free zone. <br><br>
+
+
+      </div>
+      
+  </div>
+
+  <div id="right-side" class="indent">
+    <%= image_tag('dcase3.JPG', :alt => 'LOGO', :size => "600x400",) %>
+  </div>
+
+</div>

@@ -1,0 +1,47 @@
+<%= render "shared/header" %>
+<%= render "shared/menu" %>
+
+
+<div id="page-container" class="pull-left">
+
+  <div id="left-side" class="indent">
+      
+      <div class="heading">
+        COSTUMER FEEDBACK<br><br>
+      </div>
+
+      <div class="slide-up">
+          
+          BEST BUTTs Tobacco Emporium is a family owned and operated business. We believe customer satisfaction and respect is always number 1. Our store offers a very clean and friendly environment.<br><br>
+        
+          This is a section where customers can comment on their experience in our store.<br><br>
+          <center>  
+            <b><a href="new_comment">CLICK HERE TO POST A NEW COMMENT</a> </b>
+          </center>
+          
+      </div>
+      
+  </div>
+
+  <div id="right-side" class="indent">
+        
+    <%= image_tag('storefront1.JPG', :alt => 'LOGO', :size => "600x400",) %><br><br>
+        <% @feedbacks.each do |feedback| %>
+
+            <%= feedback.name %> says:<br>
+         
+            <%= feedback.body %><br><br>
+            
+        <% end %>
+  </div>
+  
+  
+
+</div>
+
+
+
+
+
+
+<%= render "shared/footer" %>

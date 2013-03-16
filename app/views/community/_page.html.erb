@@ -1,0 +1,72 @@
+<div id="page-container" class="pull-left">
+
+  <div id="left-side" class="indent">
+      
+      <div class="heading">
+        CONTEST<br><br>
+      </div>
+
+      <div class="slide-up">
+      <% for entry in Contest.all(:limit => 10, :order => "ID") %>
+        <%= entry.contest_info %><br><br>
+      <% end %>
+      </div>
+      
+  </div>
+
+  <div id="right-side" class="indent">
+    <%= image_tag('store2.JPG', :alt => 'LOGO', :size => "600x400",) %>
+  </div>
+  
+  
+
+</div>
+
+<div id="page-container" class="pull-left">
+
+  <div id="left-side" class="indent">
+      
+      <div class="heading">
+        SUPPORT OUR TROOPS<br><br>
+      </div>
+
+      <div class="slide-up">
+      <% for entry in Troop.all(:limit => 10, :order => "ID") %>
+        <%= entry.troop_info %><br><br>
+      <% end %>
+      </div>
+      
+  </div>
+
+  <div id="right-side" class="indent">
+    <%= image_tag('donations1.JPG', :alt => 'LOGO', :size => "600x400",) %>
+  </div>
+  
+  
+
+</div>
+
+<div id="page-container" class="pull-left">
+
+  <div id="left-side" class="indent">
+      
+      <div class="heading">
+        PUBLIC INFO<br><br>
+      </div>
+
+      <div class="slide-up">
+      <% for entry in Public.all(:limit => 10, :order => "ID") %>
+        <%= entry.public_info %><br><br>
+      <% end %>
+      </div>
+      
+  </div>
+
+  <div id="right-side" class="indent">
+    <%= image_tag('storefront1.JPG', :alt => 'LOGO', :size => "600x400",) %>
+  </div>
+  
+  
+
+</div>
+

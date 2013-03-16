@@ -1,0 +1,18 @@
+<section id="main-header" class="silver-one">
+
+  <div id="logo" class="pull-left">
+    <%= image_tag('logo.png', :alt => 'LOGO', :size => "285x200",) %>
+  </div>
+  
+  <div id="god-bless-america" class="pull-left">
+    GOD BLESS AMERICA
+  </div>
+  
+  <div id="basic-info" class="pull-right">
+    <% for entry in Hours.all(:limit => 7, :order => "ID") %>
+      <%= entry.hours_info %><br>
+    <% end %>
+    Email: <a href="mailto:Bestbutts@cox.net">Bestbutts@cox.net</a><br>
+  </div>
+ 
+</section>

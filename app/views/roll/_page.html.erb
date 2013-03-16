@@ -1,0 +1,47 @@
+<div id="page-container" class="pull-left">
+
+  <div id="left-side" class="indent">
+      
+      <div class="heading">
+        ROLL YOUR OWN<br><br>
+      </div>
+
+      <div class="slide-up">
+        <% for entry in RollYourOwn.all(:order => "ID") %>
+          <%= entry.roll_info %><br><br>
+        <% end %>
+      </div>
+      
+  </div>
+
+  <div id="right-side" class="indent">
+    <%= image_tag('rolling2.JPG', :alt => 'LOGO', :size => "600x400",) %>
+  </div>
+  
+  
+
+</div>
+
+<div id="page-container" class="pull-left">
+
+  <div id="left-side" class="indent">
+      
+      <div class="heading">
+        GOT 10 MINUTES<br><br>
+      </div>
+
+      <div class="slide-up">
+        <% for entry in TenMinutes.all(:order => "ID") %>
+          <%= entry.minutes_info %><br><br>
+        <% end %>
+      </div>
+      
+  </div>
+
+  <div id="right-side" class="indent">
+    <%= image_tag('rolling5.JPG', :alt => 'LOGO', :size => "600x400",) %>
+  </div>
+  
+  
+
+</div>

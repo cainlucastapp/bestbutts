@@ -1,0 +1,23 @@
+<div id="page-container" class="pull-left">
+
+  <div id="left-side" class="indent">
+      
+      <div class="heading">
+        TOBACCO<br><br>
+      </div>
+
+      <div class="slide-up">
+      <% for entry in Tobacco.all(:order => "ID") %>
+        <%= entry.tobacco_info %><br><br>
+      <% end %>
+      </div>
+      
+  </div>
+
+  <div id="right-side" class="indent">
+    <%= image_tag('tobacco.JPG', :alt => 'LOGO', :size => "600x400",) %>
+  </div>
+  
+  
+
+</div>

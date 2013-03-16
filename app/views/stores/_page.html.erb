@@ -1,0 +1,46 @@
+<div id="page-container" class="pull-left">
+
+  <div id="left-side" class="indent">
+      
+      <div class="heading">
+        THE STORE<br><br>
+      </div>
+
+      <div class="slide-up">
+      <% for entry in Store.all(:order => "ID") %>
+        <%= entry.store_info %><br><br>
+      <% end %>
+      </div>
+      
+  </div>
+
+  <div id="right-side" class="indent">
+    <%= image_tag('storefront1.JPG', :alt => 'LOGO', :size => "600x400",) %>
+  </div>
+  
+  
+
+</div>
+
+<div id="page-container" class="pull-left">
+
+  <div id="left-side" class="indent">
+      
+      <div class="heading">
+        DIRECTIONS<br><br>
+      </div>
+
+      <div class="slide-up">
+ You can use this map provided by Google Maps to find directions to our store (this takes you to the Google Maps site).
+      </div>
+      
+  </div>
+
+  <div id="right-side" class="indent">
+    	<iframe width="600" height="550" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=6430+West+Lake+Mead+Boulevard+Suite+150,+Las+Vegas,+NV&amp;aq=&amp;sll=36.196192,-115.234416&amp;sspn=0.004476,0.009602&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=6430+W+Lake+Mead+Blvd+%23150,+Las+Vegas,+Clark,+Nevada+89108&amp;z=14&amp;ll=36.196327,-115.234577&amp;output=embed"></iframe><br /><small><center><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=6430+West+Lake+Mead+Boulevard+Suite+150,+Las+Vegas,+NV&amp;aq=&amp;sll=36.196192,-115.234416&amp;sspn=0.004476,0.009602&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=6430+W+Lake+Mead+Blvd+%23150,+Las+Vegas,+Clark,+Nevada+89108&amp;z=14&amp;ll=36.196327,-115.234577" style="color:#0000FF;text-align:left">View Larger Map</a></center></small>
+  </div>
+  
+  
+
+</div>
+

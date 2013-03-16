@@ -1,0 +1,47 @@
+<%= render "shared/header" %>
+<%= render "shared/menu" %>
+
+
+<div id="page-container" class="pull-left">
+
+  <div id="left-side" class="indent">
+      
+      <div class="heading">
+        COSTUMER FEEDBACK<br><br>
+      </div>
+
+      <div class="slide-up">
+          <p id="notice"><%= notice %></p>
+
+          <p>
+            <b>Name:</b>
+            <%= @feedback.name %>
+          </p>
+
+          <p>
+            <b>Email:</b>
+            <%= @feedback.email %>
+          </p>
+
+          <p>
+            <b>Body:</b>
+            <%= @feedback.body %>
+          </p>
+
+
+          <%= link_to 'Edit', edit_feedback_path(@feedback) %> |
+          <%= link_to 'Back', feedbacks_path %>
+      </div>
+      
+  </div>
+
+  <div id="right-side" class="indent">
+    <%= image_tag('store2.JPG', :alt => 'LOGO', :size => "600x400",) %>
+  </div>
+  
+  
+
+</div>
+
+<%= render "shared/footer" %>
+

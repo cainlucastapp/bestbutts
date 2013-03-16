@@ -1,0 +1,25 @@
+<div id="page-container" class="pull-left">
+
+  <div id="left-side" class="indent">
+      
+      <div class="heading">
+        COME IN AND RELAX<br><br>
+      </div>
+
+      <div class="slide-up">
+          <% for entry in Lounge.all(:order => "ID") %>
+            <%= entry.lounge_info %><br><br>
+          <% end %>
+      </div>
+      
+      
+
+      
+  </div>
+
+
+
+  <div id="right-side" class="indent">
+    <%= image_tag('lounge.JPG', :alt => 'LOGO', :size => "600x400",) %>
+  </div>
+  </div>
