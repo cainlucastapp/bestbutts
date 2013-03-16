@@ -7,7 +7,7 @@
       </div>
 
       <div class="slide-up">
-      <% for entry in Tobacco.all(:order => "ID") %>
+      <% for entry in @tobaccoview %>
         <%= entry.tobacco_info %><br><br>
       <% end %>
       </div>

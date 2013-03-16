@@ -1,6 +1,7 @@
-class TobaccoController < ApplicationController
+class TobaccoController < SiteController
   
   def index
+    @tobaccoview =Tobacco.all
   end
   
 end

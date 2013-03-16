@@ -7,7 +7,7 @@
       </div>
 
       <div class="slide-up">
-          <% for entry in Lounge.all(:order => "ID") %>
+          <% for entry in @loungeview %>
             <%= entry.lounge_info %><br><br>
           <% end %>
       </div>

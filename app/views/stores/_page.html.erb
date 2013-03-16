@@ -7,7 +7,7 @@
       </div>
 
       <div class="slide-up">
-      <% for entry in Store.all(:order => "ID") %>
+      <% for entry in @storeview %>
         <%= entry.store_info %><br><br>
       <% end %>
       </div>

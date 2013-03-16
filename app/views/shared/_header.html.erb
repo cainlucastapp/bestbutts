@@ -9,7 +9,7 @@
   </div>
   
   <div id="basic-info" class="pull-right">
-    <% for entry in Hours.all(:limit => 7, :order => "ID") %>
+    <% for entry in @hoursview %>
       <%= entry.hours_info %><br>
     <% end %>
     Email: <a href="mailto:Bestbutts@cox.net">Bestbutts@cox.net</a><br>

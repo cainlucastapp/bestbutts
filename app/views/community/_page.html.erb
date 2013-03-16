@@ -7,7 +7,7 @@
       </div>
 
       <div class="slide-up">
-      <% for entry in Contest.all(:limit => 10, :order => "ID") %>
+      <% for entry in @contestview.limit(10)%>
         <%= entry.contest_info %><br><br>
       <% end %>
       </div>
@@ -31,7 +31,7 @@
       </div>
 
       <div class="slide-up">
-      <% for entry in Troop.all(:limit => 10, :order => "ID") %>
+      <% for entry in @troopview.limit(10) %>
         <%= entry.troop_info %><br><br>
       <% end %>
       </div>
@@ -55,7 +55,7 @@
       </div>
 
       <div class="slide-up">
-      <% for entry in Public.all(:limit => 10, :order => "ID") %>
+      <% for entry in @publicview.limit(10) %>
         <%= entry.public_info %><br><br>
       <% end %>
       </div>

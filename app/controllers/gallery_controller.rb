@@ -1,4 +1,4 @@
-class GalleryController < ApplicationController
+class GalleryController < SiteController
   
   def index
   end

@@ -12,7 +12,7 @@
         Our inventory includes but is not limited to:<br>
         
         
-      <% for entry in Merchandise.all(:order => "ID") %>
+      <% for entry in @merchandiseview %>
         <%= entry.merchandise_info %><br>
       <% end %>
       </div>
