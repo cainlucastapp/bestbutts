@@ -26,13 +26,14 @@
   <div id="right-side" class="indent">
         
     <%= image_tag('storefront1.JPG', :alt => 'LOGO', :size => "600x400",) %><br><br>
-        <% @feedbacks.each do |feedback| %>
+          
+          <% @feedback.each do |feedback| %>
 
-            <%= feedback.name %> says:<br>
-         
-            <%= feedback.body %><br><br>
-            
-        <% end %>
+              <%= feedback.name %> says:<br>
+
+              <%= feedback.body %><br><br>
+
+          <% end %>
   </div>
   
   
