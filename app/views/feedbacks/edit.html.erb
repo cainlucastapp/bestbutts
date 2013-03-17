@@ -11,26 +11,10 @@
       </div>
 
       <div class="slide-up">
-          <p id="notice"><%= notice %></p>
 
-          <p>
-            <b>Name:</b>
-            <%= @feedback.name %>
-          </p>
+          <%= render 'form' %>
 
-          <p>
-            <b>Email:</b>
-            <%= @feedback.email %>
-          </p>
-
-          <p>
-            <b>Comment:</b>
-            <%= @feedback.body %>
-          </p>
-
-
-          <%= link_to 'GO BACK', @feedback %> |
-          <%= link_to 'DONE', feedbacks_path %>
+      
       </div>
       
   </div>
